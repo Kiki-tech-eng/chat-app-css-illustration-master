@@ -15,25 +15,36 @@
 
     <style></style>
   </head>
-  <body class="bg-black">
-    <div class="flex">
+
+  <body class="bg-[#a2a1a3] min-h-screen">
+    <div class="flex-row flex items-center">
+      <!--Gradient on the left side-->
+      
+      <!-- <div -->
+        <!-- class="bg-gradient-to-b from-[#E942FF] to-[#8838FF] w-[350px] h-[500px] z-0" -->
+      <!-- ></div> -->
       <!--The left side-->
       <div>
         <!--The whole body of the chatapp-->
-        <div class="bg-white">
+        <div class="w-[320px] h-[500px] bg-white rounded-3xl ">
           <!--Phone chat app,left side-->
           <div>
             <!--header-->
-            <div>
-              <h4>Samuel Green</h4>
-              <p>Available to Walk</p>
+            <div class="bg-gradient-to-b from-[#E942FF] to-[#8838FF] rounded-b-md">
+              <div class="flex items-center space-x-3 py-4 pl-5">
+              <img src="./images/avatar.jpg" class="h-[30px] rounded-full" alt="">
+              <div class="flex-col">
+              <h4 class="text-white font-medium">Samuel Green</h4>
+              <p class="text-[#D89EFF] font-light text-[12px]">Available to Walk</p>
+              </div>
+              </div>
             </div>
 
-            <div>
+            <div class="bg-[#F5F3F7] h-[415px] w-[320px]">
               <!--Chat one-->
               <div>
-                <p>That sounds great. I’d be happy with that.</p>
-                <p>Could you send over some pictures of your dog, please?</p>
+                <p class="text-[#9241C8] font-[500]">That sounds great. I’d be happy with that.</p>
+                <p class="text-[#9241C8] font-[500]">Could you send over some pictures of your dog, please?</p>
               </div>
 
               <!--Chat two-->
@@ -43,7 +54,7 @@
               </div>
 
               <!--Chat three-->
-              <p>
+              <p class="text-[#9241C8] font-[500]">
                 She looks so happy! The time we discussed works. How long shall
                 I take her out for?
               </p>
@@ -55,24 +66,28 @@
               </div>
 
               <!--Comment-->
-              <p>Type a message…</p>
+              <input
+                placeholder="Type a message…"
+                class="border rounded-md py-3 px-4"
+                type="text"
+              />
             </div>
           </div>
         </div>
       </div>
 
       <!--Right side-->
-      <div
-        class="flex-col flex justify-center w-full max-w-md mx-auto bg-white"
-      >
-        <p class="text-2xl font-semibold mb-5">Simple booking</p>
-        <p class="">
-          Stay in touch with our dog walkers through the chat <br />
-          interface. This makes it easy to discuss arrangements and <br />
-          make bookings. Once the walk has been completed you can <br />
+      
+      <div class="flex-col flex justify-center h-screen text-wrap ml-9">
+        <p class="text-[36px] font-[700] mb-5 text-[#3E2753]">Simple booking</p>
+        <p class="text-[#A39DAA] font-[400] text-[16px]">
+          Stay in touch with our dog walkers through the chat
+          interface. This makes it easy to discuss arrangements and
+          make bookings. Once the walk has been completed you can
           rate your walker and book again all through the chat.
         </p>
       </div>
+      <!-- <div class="bg-[#91bb67] w-[350px] h-[500px] -z-10"></div> -->
     </div>
   </body>
 </html>
